@@ -1,0 +1,47 @@
+<div class="wrapper">
+  <div class="goBlur d-none d-md-block">
+  </div>
+  <div style="bottom: 9%" class="goBlur d-none d-md-block">
+  </div>
+  <div class="center-line">
+    <!-- <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a> -->
+  </div>
+  <div style="margin-top: 5%;">
+    <div *ngFor="let detail of myDetails;let indexOfelement=index;" class="row row-{{indexOfelement+1}}">
+      <section class="myCard">
+        <i class="icon fas fa-solid fa-{{l-indexOfelement}}"></i>
+        <div class="details">
+        <span class="title">{{detail.companyName}}</span>
+        <span>{{detail.time}}</span>
+      </div>
+      <p>{{detail.designation}}</p>
+      <div class="bottom">
+        <!-- <a class="btn btn-primary">Skills Used</a> -->
+        <!-- Button trigger modal -->
+        <button type="button" class="button-85" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Skills Used
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 style="margin-left: 37%;" class="modal-title" id="exampleModalLabel">Skills Used</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ol class="gradient-list">
+                  <li *ngFor="let skill of detail.skills"> {{skill}} </li>
+                </ol>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+

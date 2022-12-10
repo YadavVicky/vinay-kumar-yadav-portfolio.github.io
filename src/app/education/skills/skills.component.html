@@ -1,0 +1,116 @@
+<div class="wrapper">
+<section class="aezakmiaa card mt-5">
+  <div class="card-body pb-2">
+    <div (click)="hideMyDiv('1')" class="hideMy text-success">
+      <h6>Web Development <i class="fa-solid fa-code"></i></h6>
+      <div class="progress mb-3 myBackground">
+        <div class="myProgress-85 progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div [style]="myStyleInTs_1" class="myWebDev">
+        <h6>UI/UX <i class="fa-brands fa-html5"></i></h6>
+        <div class="progress mb-3 myBackground">
+          <div class="myProgress-80 progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+       <h6>JavaScript <i class="fa-brands fa-js"></i></h6>
+      <div class="progress mb-3 myBackground">
+        <div class="myProgress-95 progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h6>Angular <i class="fa-brands fa-angular"></i></h6>
+       <div class="progress mb-3 myBackground">
+           <div class="myProgress-80 progress-bar bg-success" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+      <h6>Node.JS <i class="fa-brands fa-node-js"></i></h6>
+       <div class="progress mb-3 myBackground">
+           <div class="myProgress-85 progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+      </div>
+    </div>
+   </div>
+</section>
+<section class="aezakmiaa card mt-2">
+  <div class="card-body pb-2">
+    <div (click)="hideMyDiv('2')" class="hideMy text-info">
+      <h6>Android Development <i class="fa-brands fa-android"></i></h6>
+      <div class="progress mb-3 myBackground">
+        <div class="myProgress-75 progress-bar bg-info" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div [style]="myStyleInTs_2" class="myWebDev">
+        <h6>UI/UX <i class="fa-brands fa-html5"></i></h6>
+        <div class="progress mb-3 myBackground">
+          <div class="myProgress-80 progress-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+       <h6>Kotlin <i class="fa-sharp fa-solid fa-k"></i></h6>
+      <div class="progress mb-3 myBackground">
+        <div class="myProgress-70 progress-bar bg-info" role="progressbar" style="width: 70%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h6>Android Studios (IDE) </h6>
+       <div class="progress mb-3 myBackground">
+           <div class="myProgress-75 progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+      </div>
+    </div>
+   </div>
+</section>
+<section class="aezakmiaa card mt-2">
+  <div class="card-body pb-2">
+    <div (click)="hideMyDiv('3')" class="hideMy text-warning">
+      <h6>D.S.A. (Programming) <i class="fa-solid fa-database"></i></h6>
+      <div class="progress mb-3 myBackground">
+        <div class="myProgress-80 progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div [style]="myStyleInTs_3" class="myWebDev">
+        <h6>C++</h6>
+        <div class="progress mb-3 myBackground">
+          <div class="myProgress-75 progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+       <h6>Python <i class="fa-brands fa-python"></i></h6>
+      <div class="progress mb-3 myBackground">
+        <div class="myProgress-85 progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h6>JAVA <i class="fa-brands fa-java"></i></h6>
+       <div class="progress mb-3 myBackground">
+           <div class="myProgress-80 progress-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+      </div>
+    </div>
+   </div>
+</section>
+<section class="aezakmiaa card mt-2">
+  <div class="card-body pb-2">
+    <div (click)="hideMyDiv('4')" (mouseover)="viewMyDivMouse('4')" (mouseleave)="hideMyDivMouse('4')" class="hideMy">
+      <h6 class="text-primary">Communications <i class="fa-sharp fa-solid fa-comments"></i></h6>
+      <div class="progress mb-3 myBackground">
+        <div class="myProgress-100 progress-bar bg-primary" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+    </div>
+   </div>
+</section>
+</div>
+<!-- <section class="aezakmiaa card mt-5" *ngFor="let mySkill of mySkills;let indexOfelement=index;">
+  <div class="card-body pb-2">
+    <div (click)="hideMyDiv('{{indexOfelement+1}}')" (mouseover)="viewMyDivMouse('{{indexOfelement+1}}')" (mouseleave)="hideMyDivMouse('{{indexOfelement+1}}')" class="hideMy">
+      <h6>{{ mySkill.name }}</h6>
+      <div class="progress mb-3">
+        <div class="myProgress-{{mySkill.percentage}} progress-bar bg-danger" role="progressbar" [ngStyle]="{width: (mySkill.percentage+'%')}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <div [ngStyle]="{display: 'myStyleInTs_'+indexOfelement+1}" class="myWebDev">
+        <h6>UI/UX</h6>
+        <div class="progress mb-3">
+          <div class="myProgress-80 progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+       <h6>JavaScript</h6>
+      <div class="progress mb-3">
+        <div class="myProgress-95 progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <h6>Angular</h6>
+       <div class="progress mb-3">
+           <div class="myProgress-80 progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+      <h6>Node.JS</h6>
+       <div class="progress mb-3">
+           <div class="myProgress-85 progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+       </div>
+      </div>
+    </div>
+   </div>
+</section> -->

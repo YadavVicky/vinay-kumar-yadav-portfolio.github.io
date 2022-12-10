@@ -1,0 +1,117 @@
+.wrapper{
+  width: 90%;
+  margin: auto;
+  margin-top: 5%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px whitesmoke;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 90vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.myBackground{
+  background-color: whitesmoke;
+}
+
+.aezakmiaa{
+    background: #e6e9ff;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 50px #abb7e9;
+    cursor: pointer;
+}
+
+.myWebDev{
+  width: 95%;
+  margin-left: 4%;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.myProgress-100{
+  animation: myProgress-100 2s ease-in;
+}
+@keyframes myProgress-100   {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 100%;
+  }
+ }
+.myProgress-95{
+  animation: myProgress-95 2s ease-in;
+}
+@keyframes myProgress-95 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 95%;
+  }
+ }
+.myProgress-90{
+  animation: myProgress-90 2s ease-in;
+}
+@keyframes myProgress-90 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 90%;
+  }
+ }
+.myProgress-85{
+  animation: myProgress-85 2s ease-in;
+}
+ @keyframes myProgress-85 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 85%;
+  }
+ }
+.myProgress-80{
+  animation: myProgress-80 2s ease-in;
+}
+ @keyframes myProgress-80 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 80%;
+  }
+ }
+
+.myProgress-75{
+  animation: myProgress-75 2s ease-in;
+}
+ @keyframes myProgress-75 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 75%;
+  }
+ }
+.myProgress-70{
+  animation: myProgress-70 2s ease-in;
+}
+ @keyframes myProgress-70 {
+  0%{
+    width: 0;
+  }
+  100%{
+    width: 70%;
+  }
+ }
+

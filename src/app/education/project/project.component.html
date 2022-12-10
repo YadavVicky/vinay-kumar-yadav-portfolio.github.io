@@ -1,0 +1,55 @@
+<div class="wrapper">
+  <div class="goBlur d-none d-md-block">
+  </div>
+  <div style="bottom: 9%" class="goBlur d-none d-md-block">
+  </div>
+  <div class="center-line">
+    <!-- <a href="#" class="scroll-icon"><i class="fas fa-caret-up"></i></a> -->
+  </div>
+  <div style="margin-top: 5%;">
+    <div *ngFor="let detail of myDetails;let indexOfelement=index;" class="row row-{{ (indexOfelement+1)%2 === 0 ? 2 : 1}}">
+      <section class="myCard">
+        <i class="icon fas fa-solid fa-{{l-indexOfelement}}"></i>
+        <div class="details">
+        <span class="title">{{detail.ProjectName}}</span>
+        <span>{{detail.time}}</span>
+      </div>
+      <p>{{detail.level}}</p>
+      <p>{{detail.application}}</p>
+      <div class="bottom">
+        <!-- <a class="btn btn-primary">Skills Used</a> -->
+        <!-- Button trigger modal -->
+        <button type="button" class="button-64" data-bs-toggle="modal" [attr.data-bs-target]="'#exampleModal'+ indexOfelement">
+          <span class="text">Desc</span>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="{{'exampleModal'+indexOfelement}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 style="margin-left: 37%;" class="modal-title" id="exampleModalLabel">Description</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <p> {{detail.desc}} </p>
+              </div>
+              <div class="modal-footer">
+                <div>
+                  <a style="background-color: #c2fbd7; color: green; border-radius: 100px; transition: all 250ms;" type="button" *ngIf="detail.link !== '' " href="{{detail.link}}" target="_blank" class="btn button-33" role="button">Go To Page</a>
+                </div>
+                <button type="button" class="button-82-pushable" data-bs-dismiss="modal">
+                  <span class="button-82-shadow"></span>
+                  <span class="button-82-edge"></span>
+                  <span class="button-82-front text">
+                    Close
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+

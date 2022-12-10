@@ -1,0 +1,104 @@
+body {
+  background-color: #000;
+}
+
+#landing-header {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  padding-top: 30vh;
+}
+
+#landing-header h1 {
+  color: #fff;
+}
+
+.glow{
+  font-family: "Audiowide", sans-serif;
+  color: whitesmoke;
+}
+
+.slideshow {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow li {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  z-index: 0;
+  animation: imageAnimation 50s linear infinite;
+}
+
+.slideshow li:nth-child(1) {
+  background-image: url(https://res.cloudinary.com/dkrtupzet/image/upload/v1666757252/anas-alshanti-feXpdV001o4-unsplash_xusgin.jpg)
+}
+.slideshow li:nth-child(2) {
+  background-image: url(https://res.cloudinary.com/dkrtupzet/image/upload/v1666757245/ilya-pavlov-OqtafYT5kTw-unsplash_wv49nd.jpg);
+  animation-delay: 10s;
+}
+.slideshow li:nth-child(3) {
+  background-image: url(https://res.cloudinary.com/dkrtupzet/image/upload/v1666757242/ales-nesetril-Im7lZjxeLhg-unsplash_r4ggww.jpg);
+  animation-delay: 20s;
+}
+.slideshow li:nth-child(4) {
+  background-image: url(https://res.cloudinary.com/dkrtupzet/image/upload/v1666757370/glenn-carstens-peters-npxXWgQ33ZQ-unsplash_ludfgd.jpg);
+  animation-delay: 30s;
+}
+.slideshow li:nth-child(5) {
+  background-image: url(https://res.cloudinary.com/dkrtupzet/image/upload/v1666757375/retrosupply-jLwVAUtLOAQ-unsplash_ou49lg.jpg);
+  animation-delay: 40s;
+}
+
+@keyframes imageAnimation {
+  0% {
+    opacity: 0;
+    animation-timing-function: ease-in;
+  }
+  10% {
+    opacity: 1;
+    animation-timing-function: ease-out;
+  }
+  20% {
+    opacity: 1
+  }
+  30% {
+    opacity: 0
+  }
+}
+
+.myButton {
+  width: 50%;
+  margin: auto;
+}
+
+/* Older browser support - .no-cssanimations class added by modernizr */
+.no-cssanimations .slideshow li {
+	opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+  .myButton {
+    width: 100%;
+    margin: auto;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .glow {
+    font-size: 1.5rem;
+  }
+}

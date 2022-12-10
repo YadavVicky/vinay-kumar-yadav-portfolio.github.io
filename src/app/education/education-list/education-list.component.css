@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+.section {
+  display: flex;
+  margin: auto;
+  margin-top: 5%;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  color: hsl(234, 12%, 34%);
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px whitesmoke;
+}
+
+section {
+  max-width: 25rem;
+  margin-top: 4rem;
+}
+
+.feature {
+  position: relative;
+  max-width: 22rem;
+  height: 15rem;
+  margin: 2rem auto;
+  padding: 2em;
+  border-radius: 0.75em;
+  box-shadow: 5px 5px 20px rgba(0 0 0/0.15);
+  text-align: left;
+  transition: transform 200ms ease-in;
+}
+
+.feature:hover {
+  transform: scale(1.03);
+}
+
+.feature__desc {
+  margin-top: 0.5em;
+  color: hsl(220, 4%, 29%);
+}
+
+.feature__img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+/* separate styling */
+
+.section__title {
+  margin: 0 auto;
+  max-width: 90%;
+  font-size: 1.65rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: center;
+}
+
+.section__title span {
+  font-weight: 700;
+}
+
+.section__desc {
+  max-width: 32ch;
+  margin: 1rem auto 3rem;
+  color: hsl(229, 6%, 66%);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.feature-one {
+  border-top: 5px solid hsl(180, 62%, 55%);
+  background-color: aliceblue;
+}
+
+.feature-two {
+  border-top: 5px solid hsl(0, 78%, 62%);
+  background-color: aliceblue;
+}
+
+.feature-three {
+  border-top: 5px solid hsl(34, 97%, 64%);
+  background-color: aliceblue;
+}
+
+.feature-four {
+  border-top: 5px solid  hsl(212, 86%, 64%);
+  background-color: aliceblue;
+}
+
+
+/* attribution styling */
+
+/* media queries */
+
+@media (min-width: 1000px) {
+
+  section {
+    max-width: 200rem;
+  }
+
+  .section__title {
+    margin: 0 auto;
+    max-width: 40%;
+    font-size: 2rem;
+  }
+
+  .section__desc {
+    max-width: 55ch;
+    margin: 1rem auto 1rem;
+  }
+
+  .features {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .feature-one {
+    margin: auto 0;
+  }
+
+  .feature-four {
+    margin: auto 0;
+  }
+}
+

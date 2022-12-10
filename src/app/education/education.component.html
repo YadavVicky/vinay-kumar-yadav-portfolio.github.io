@@ -1,0 +1,104 @@
+<div class="wholeBody">
+  <header class="d-sm-block d-md-none">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="activeClass" routerLink="/education/details"><i class="fa-solid fa-circle-info"></i> Details</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="activeClass" routerLink="/education/experience"><i class="fa-solid fa-briefcase"></i> Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="activeClass" routerLink="/education/education"> <i class="fa-solid fa-school"></i> Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="activeClass" routerLink="/education/projects"> <i class="fa-solid fa-diagram-project"></i> Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLinkActive="activeClass" routerLink="/education/skills"> <i class="fa-sharp fa-solid fa-star"></i> Skills</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+<div style="margin-left: 0;" class="container-fluid">
+  <div class="row">
+    <header class="leftSide col-3 d-none d-sm-none d-md-block">
+        <div class="aeza">
+          <nav>
+            <ul class="ul_mySytle">
+              <li class="myL">
+                <a class="myLink" routerLinkActive="activeClass" routerLink="/education/details">
+                  <i class="fa-solid fa-circle-info"></i> Details
+                </a>
+              </li>
+              <li class="myL">
+                <a class="myLink" routerLinkActive="activeClass" routerLink="/education/experience">
+                  <i class="fa-solid fa-briefcase"></i> Experience
+                </a>
+              </li>
+              <li class="myL">
+                <a class="myLink" routerLinkActive="activeClass" routerLink="/education/education">
+                  <i class="fa-solid fa-school"></i> Education
+                </a>
+              </li>
+              <li class="myL">
+                <a class="myLink" routerLinkActive="activeClass" routerLink="/education/projects">
+                  <i class="fa-solid fa-diagram-project"></i> Projects
+                </a>
+              </li>
+              <li class="myL">
+                <a class="myLink" routerLinkActive="activeClass" routerLink="/education/skills">
+                <i class="fa-sharp fa-solid fa-star"></i> Skills
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <main class="col-md-9 col-sm-12">
+        <router-outlet></router-outlet>
+        <button type="button" title="Contact Me" class="myFixed btn btn-primary btn-pill btn-xl" data-bs-toggle="modal" data-bs-target="#exampleModaas">
+          <i class="fa-regular fa-2x fa-id-badge"></i> <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+          <span class="visually-hidden">New alerts</span></span></button>
+          <div class="modal fade" id="exampleModaas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <section id="contact">
+                    <div class="contact-box">
+                      <div class="contact-links">
+                        <h3>CONTACT ME</h3>
+                        <h3>Email:- vinaykumar.yadav12346@gmail.com</h3>
+                        <h3>Phone:- +91-9983316522</h3>
+                        <div class="links">
+                          <div class="link">
+                            <a href="https://www.linkedin.com/in/vinay-kumar-yadav-14b87b192" target="_blank"><img src="https://i.postimg.cc/m2mg2Hjm/linkedin.png" alt="linkedin"></a>
+                          </div>
+                          <div class="link">
+                            <a href="mailto:vinaykumar.yadav12346@gmail.com"><i class="myfa fa-solid  fa-3x fa-envelope"></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
+    </div>
+  </div>
+</div>
